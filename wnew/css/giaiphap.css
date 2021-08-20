@@ -325,3 +325,13 @@ body{
         margin-top: 10px;
     }
 }
+
+
+/* hover btn */
+.btn:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+.btn{
+    transition: all linear 0.3s;
+}
