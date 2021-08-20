@@ -111,8 +111,32 @@ body{
     border-radius: 20px;
     box-shadow: 0 0 7px 0 rgb(0 0 0 / 50%);
 }
-.card-min-height-solution{
-    min-height: 105.6px;
+#educate .card-title,
+#solution-social .card-title,
+#solution .card-title{
+    width: 80% !important;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    max-height: 44px;
+    line-height: 44px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.fix-price{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+#educate .card-text,
+#solution-social .card-text,
+#solution .card-text{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
 .bg-opa-social{
     background-color: #3C74CD;
