@@ -236,16 +236,33 @@ body{
     padding-bottom: 11px;
     padding-top: 11px;
 }
+#contact .btn-guithongtin::before{
+    content:"";
+    position:absolute;
+    top:100%;
+    left:0;
+    height:20px;
+    width:100%;
+    background-color:transparent;
+}
 #contact .btn-guithongtin{
     background-color: #1E488D;
     border-radius: 15px;
     border: 2px solid #fff;
-    transition: all linear 0.3s;
-    transform: translateY(0);
+    position: relative;
+    transition:all linear 8s;
 }
 #contact .btn-guithongtin:hover{
-    transform: translateY(-20%);
+    animation-name: guithongtinauto;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
+@keyframes guithongtinauto {
+    0%   {left:0px; top:0px;}
+    50% {left:0px; top:-12px;}
+    100% {left:0px; top:0px;}
+  }
+
 
 
 /* responsive */
